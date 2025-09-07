@@ -1,17 +1,25 @@
-import React from 'react';
-import gsap  from 'gsap';
+import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
+import Hero from './sections/Hero';
+import Navbar from './sections/Navbar';
+import FirstVideo from './sections/FirstVideo';
+import Jason from './sections/Jason';
+import SecondVideo from './sections/SecondVideo';
+import Lucia from './sections/Lucia';
 
 gsap.registerPlugin(ScrollTrigger);
-
 
 const App = () => {
   return (
     <main>
-      <div>
-        <h1 className="text-3xl text-pink" >  Welcome to the world of GTA and gsap!</h1>
-      </div>
+        <Navbar />
+        <Hero />
 
+        <FirstVideo />
+        <Jason />
+
+        <SecondVideo />
+        <Lucia />
     </main>
   )
 }
