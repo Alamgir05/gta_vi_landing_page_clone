@@ -19,8 +19,8 @@ const Jason = () => {
         trigger: '.jason',
         start: 'top center',
         end: '80% center',
-        scrub: 2,
-      }, y: -100 , duration: 1, ease: 'power1.inOut'
+        scrub: 2
+      }, y: -100, duration: 1, ease: 'power1.inOut'
     }, '<')
   }) 
 

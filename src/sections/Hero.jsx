@@ -1,9 +1,8 @@
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { useMaskSettings } from "../../constants";
+
+import { useMaskSettings } from '../../constants';
 import ComingSoon from "./ComingSoon"
-
-
 
 const Hero = () => {
   const { initialMaskPos, initialMaskSize, maskPos, maskSize } = useMaskSettings();
@@ -28,7 +27,7 @@ const Hero = () => {
       }
     })
 
-     tl
+    tl
       .to('.fade-out', { opacity: 0, ease: 'power1.inOut' })
       .to('.scale-out', { scale: 1, ease: 'power1.inOut' })
       .to('.mask-wrapper', { maskSize, ease: 'power1.inOut' }, '<')
@@ -38,6 +37,7 @@ const Hero = () => {
       } }, '<')
       .to('.entrance-message', { duration: 1, ease: 'power1.inOut', maskImage: 'radial-gradient(circle at 50% 0vh, black 50%, transparent 100%)' }, '<')
   });
+
   return (
     <section className="hero-section">
       <div className="size-full mask-wrapper">
@@ -61,5 +61,5 @@ const Hero = () => {
     </section>
   )
 }
-export default Hero
 
+export default Hero
